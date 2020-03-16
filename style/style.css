@@ -1,7 +1,9 @@
 *{
     margin: 0; padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header{
+    background-color: #fff;
     border-top: 3px solid #bb0003;
     border-bottom: 0.5px solid #bb0003;
 }
@@ -10,10 +12,18 @@ header .logo{
     width: 150px;
     padding: 15px;
 }
+body{
+    background-color: #e3e1dc;
+}
+h2{
+    text-align: center;
+    font-weight: none;
+    margin-bottom: 15px;
+}
 .form-r{
-    width: 50%;
-    background-color: pink;
-    height: 500px;
+    width: 40%;
+    background-color: white;
+    height: 550px;
     margin: 0 auto;
     padding: 100px 200px;
     box-sizing: border-box;
@@ -36,44 +46,19 @@ header .logo{
     cursor: pointer;
     box-sizing: border-box;
 }
-.form-r .btn1 input{
-    background-color: black;
-    border:none;
-    color: white;
-    width:100%;
-    box-sizing: border-box;
-}
-
-.line{
-	text-align: center;
-	overflow: hidden;
-	margin-right: 5%;
-	margin-left: 5%;
-	width: 90%;
-	margin-top: 15px
-}
-.line span{
-	position: relative;	
-}
-.line>span:before{
-	right: 100%;
-	margin-right: 15px
-}
-.line>span:after{
-	left: 100%;
-	margin-left: 15px
-}
-.line>span:before,.line>span:after{
-	content: '';
-	background: red;
-	height: 1px;
-	width: 700px;
-	position: absolute;
-	top: 50%
-}
-.error{
+.red_border{
     border: 1px solid red;
 }
-.er,.er1{
+.error{
     display: none;
+}
+.grey{
+    padding: 2px;
+    font-size: 12px;
+    color: grey;
+}
+.qg>select{
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 20px;
 }

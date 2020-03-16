@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="img-logo.png" alt="">
+            <img src="style/img_garena_logo.png" alt="">
         </div>
     </header>
     <main>
@@ -17,23 +17,29 @@
             <h2>Đăng ký </h2>
             <form action="">
                 <div class="form-control">
-                    <input id="userName" type="text" placeholder="Tên truy cập">
-                    <span class="er" id="er_userName">x Tên tài khoản không hợp lệ</span>
+                    <input id="name" type="text" placeholder="Tên truy cập">
+                    <span class="error" id="error_name">x Tên tài khoản không hợp lệ</span>
                 </div>
                 <div class="form-control">
-                    <input id="userPassword" type="password" name="" placeholder="Mật khẩu">
-                    <span class="er1" id="er_userPassword">x Vui lòng nhập Mật khẩu</span>
+                    <input id="password" type="password" name="" placeholder="Mật khẩu">
+                    <span class="error" id="error_password">x Vui lòng nhập Mật khẩu</span>
                 </div>
                 <div class="form-control">
-                    <input id="userPassword" type="password" name="" placeholder="Nhập lại mật khẩu">
-                    <span class="er1" id="er_userPassword">x Vui lòng nhập Mật khẩu</span>
+                    <input id="repass" type="password" name="" placeholder="Nhập lại mật khẩu">
+                    <span class="error" id="error_repass">x Mật khẩu không đúng</span>
                 </div>
                 <div class="form-control">
-                    <input id="userPassword" type="password" name="" placeholder="Nhập lại mật khẩu">
-                    <span class="er1" id="er_userPassword">x Vui lòng nhập Mật khẩu</span>
-                </div><div class="form-control">
-                    <input id="userPassword" type="password" name="" placeholder="Nhập lại mật khẩu">
-                    <span class="er1" id="er_userPassword">x Vui lòng nhập Mật khẩu</span>
+                    <input id="" type="email" name="" placeholder="Email">
+                    <span class="grey" id="">bạn cần sử dụng email này trong trường hợp cần đặt lại mật khẩu</span>
+                </div>
+                <div class="form-control qg">
+                    <select name="" id="" size="1">
+                        <option value="VN">Việt Nam</option>
+                        <option value="CH">Trung Quốc</option>
+                    </select>
+                </div>
+                <div class="">
+                   <input type="checkbox" id="cb"> <label for="cb">Tôi đồng ý với Điều khoản sử dụng</label>
                 </div>
                 <div class="form-control btn">
                     <input type="Submit" value="Đăng kí ngay" onclick="return check()">
@@ -41,7 +47,6 @@
             </form>
         </div>
     </main>
-    <script src="js/validate.js">
-    </script>
+    <script src="js/validate.js"></script>
 </body>
 </html>
